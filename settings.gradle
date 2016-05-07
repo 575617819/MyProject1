@@ -1,0 +1,1 @@
+include ':app', ':myproject1_2048'

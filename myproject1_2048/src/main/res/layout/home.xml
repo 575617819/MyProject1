@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <!--第一部分-->
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3D444D"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2048小游戏"
+            android:textColor="#FDFDFE"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <!--目标值，得分和最高得分-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#3D444D"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="目标值"
+                android:textColor="#FDFDFE"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="20sp"
+                android:text="2048"
+                android:layout_marginTop="5dp"
+                android:textColor="#00BA98"
+                android:id="@+id/tv_home_goal"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="分数"
+                android:textColor="#FDFDFE"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:text="0"
+                android:textColor="#00BA98"
+                android:id="@+id/tv_home_score"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="最高得分"
+                android:textColor="#FDFDFE"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:text="0"
+                android:textColor="#00BA98"
+                android:id="@+id/tv_home_record"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+    <!--第二部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/rl_home_gridlayout"
+        >
+
+
+    </RelativeLayout>
+
+
+
+    <!--第三部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="返回上一步"
+            android:textColor="#FDFDFE"
+            android:textSize="15sp"
+            android:background="@drawable/bt_home_final"
+            android:layout_margin="2dp"
+            android:id="@+id/bt_home_revert"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="重新开始"
+            android:textSize="15sp"
+            android:textColor="#FDFDFE"
+            android:background="@drawable/bt_home_final"
+            android:layout_margin="2dp"
+            android:id="@+id/bt_home_restart"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textSize="15sp"
+            android:textColor="#FDFDFE"
+            android:background="@drawable/bt_home_final"
+            android:layout_margin="2dp"
+            android:id="@+id/bt_home_options"
+            />
+
+    </LinearLayout>
+</LinearLayout>
